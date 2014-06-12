@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seventrain:xwalk xmlns:seventrain="http://cdlib.org/7train/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<!-- 
+	This file determines what metadata elements the values in the original file are mapped to.  This implementation maps 
+		them to unqualified Dublin Core, but by changing the values below, they can be mapped in other ways.
+	Changes to the dmdSec of the METS to accommodate alternative metadata schemas must be made in the "cdm.xsl" stylesheet.
+	
+	To alter a mapping, simply replace an element as in the example below:
+	<title>
+		<mods:titleInfo>
+			<mods:title>
+				<seventrain:value/>
+			</mods:title>
+		</mods:titleInfo>
+	</title> -->
+		
+	<!-- Match the top level <record> element and process its children with the xwalk. -->
+	<record>
+		<seventrain:children/>
+	</record>
+	
+	<!-- Match <title> and replace it with <dc:title>. -->
+	<title>
+		<dc:title>
+			<seventrain:value/>
+		</dc:title>
+	</title>
+	<alternative>
+		<dc:title>
+			<seventrain:value/>
+		</dc:title>
+	</alternative>
+	<abstract>
+		<dc:abstract>
+			<seventrain:value/>
+		</dc:abstract>
+	</abstract>
+	<language>
+		<dc:language>
+			<seventrain:value/>
+		</dc:language>
+	</language>
+	<creator>
+		<dc:creator>
+			<seventrain:value/>
+		</dc:creator>
+	</creator>
+	<!-- In ContentDM, subjects are held in one element, separated by
+			 semicolons. To deal with this, we use <seventrain:split> with
+			 two attributes. @on is a regex which defines a pattern for
+			 matching the string that separates the useful data. @in is what
+			 the string is split into for further processing; in this case
+			 <split-subject>, which we define below.-->
+	<subject>
+		<seventrain:split on=";\s*" into="split-subject"/>
+	</subject>
+	<split-subject>
+		<dc:subject>
+			<seventrain:value/>
+		</dc:subject>
+	</split-subject>
+	<identifier>
+		<dc:identifier>
+			<seventrain:value/>
+		</dc:identifier>
+	</identifier>
+	<publisher>
+		<dc:publisher>
+			<seventrain:value/>
+		</dc:publisher>
+	</publisher>
+	<coverage>
+		<dc:coverage>
+			<seventrain:value/>
+		</dc:coverage>
+	</coverage>
+	<spatial>
+		<dc:coverage>
+			<seventrain:value/>
+		</dc:coverage>
+	</spatial>
+	<rights>
+		<dc:rights>
+			<seventrain:value/>
+		</dc:rights>
+	</rights>
+	<contributor>
+		<dc:contributor>
+			<seventrain:value/>
+		</dc:contributor>
+	</contributor>
+	<date>
+		<dc:date>
+			<seventrain:value/>
+		</dc:date>
+	</date>
+	<created>
+		<dc:date>
+			<seventrain:value/>
+		</dc:date>
+	</created>
+	<issued>
+		<dc:date>
+			<seventrain:value/>
+		</dc:date>
+	</issued>
+	<source>
+		<dc:source>
+			<seventrain:value/>
+		</dc:source>
+	</source>
+	<relation>
+		<dc:relation>
+			<seventrain:value/>
+		</dc:relation>
+	</relation>
+	<isPartOf>
+		<dc:relation>
+			<seventrain:value/>
+		</dc:relation>
+	</isPartOf>
+	<form>
+		<dc:type>
+			<seventrain:value/>
+		</dc:type>
+	</form>
+	<genre>
+		<dc:type>
+			<seventrain:value/>
+		</dc:type>
+	</genre>
+	<type>
+		<dc:type>
+			<seventrain:value/>
+		</dc:type>
+	</type>
+	<description>
+		<dc:description>
+			<seventrain:value/>
+		</dc:description>
+	</description>
+	<medium>
+		<dc:format>
+			<seventrain:value/>
+		</dc:format>
+	</medium>
+	<format>
+		<dc:format>
+			<seventrain:value/>
+		</dc:format>
+	</format>
+</seventrain:xwalk>

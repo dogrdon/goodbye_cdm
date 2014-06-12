@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" 
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+			     http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2006-02-24T15:41:46Z</responseDate>
+  <request verb="GetRecord" identifier="http://example.org/fake/record/1"
+	   metadataPrefix="oai_dc">http://example.org/</request>
+  <GetRecord>
+    <record> 
+      <header>
+	<identifier>oai:example.org/fake/record/1</identifier> 
+	<datestamp>2006-02-24</datestamp>
+	<setSpec>fake</setSpec> 
+	<setSpec>example</setSpec>
+      </header>
+      <metadata>
+	<oai_dc:dc
+	    xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+	    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	    xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ 
+				http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+	  <dc:title>An example record for seventrain</dc:title> 
+	  <dc:creator>Hetzner, Erik</dc:creator>
+	  <dc:subject>Open Archives</dc:subject> 
+	  <dc:subject>METS</dc:subject> 
+	  <dc:description>Just another sample.</dc:description> 
+	  <dc:date>2006-02-24</dc:date>
+	</oai_dc:dc>
+      </metadata>
+    </record>
+  </GetRecord>
+</OAI-PMH>

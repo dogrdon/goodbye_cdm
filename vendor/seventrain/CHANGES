@@ -1,0 +1,17 @@
+Version 1.1
+(...)
+
+ New features, enhancements:
+    * Upgrade to Saxon 9.1.0.7j
+    * Minor changes to documentation.
+    * Include HTML and PDF versions of documentation.
+
+ Bugfixes:
+    * If an identifier cannot be found, cdm.xsl will now write to a
+      random file name rather than try to write to a .mets file over
+      and over.
+
+Version 1.0
+(20 June 2006)
+
+ Initial release.

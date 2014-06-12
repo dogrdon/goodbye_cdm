@@ -1,0 +1,85 @@
+General
+-------
+
+The 7train transformation process is designed to produce METS objects
+from standardized XML files. This scenario was composed by Paul Fogel
+and Erik Hetzner at the California Digital Library (CDL) and is
+copyright the University of California Regents.
+
+Overview
+--------
+
+The 7train tool was designed to transform XML documents into METS
+objects conforming to a specified METS profile. This particular
+implementation has the goal of transforming CONTENTdm XML exports into
+METS suitable for inclusion in CDL systems. However, the tool can be
+customized to process any kind of XML documents (ex. OAI records,
+etc.) and produce METS of any flavor. See Customization below.
+
+7train.xsl is the base stylesheet in the transformation and defines
+the basic elements and structure of a METS file. Local installations
+can customize this process by creating a stylesheet that imports
+7train.xsl and overrides certain templates. The “cdm.xsl” stylesheet
+(in the default implementation) is an example of a local installation
+designed to transform a specific XML file (CONTENTdm export) into a
+specific kind of METS.
+
+The files included in this distribution are as follows:
+
+  7train.xsl
+    this is the stylesheet that constructs the basic METS sections; it
+    does not attempt to define values for elements or attributes
+
+  cdm.xsl
+    this primary stylesheet defines how the values in the original XML
+    document will be transformed; in addition, it determines the
+    structure and values for the METS sections defined in 7train.xsl
+
+  xwalker.xsl
+    this stylesheet contains the logic that processes the mappings
+    defined in \*.xwalk to populate metadata sections in the METS
+    (mainly the <dmdSec>)
+
+  cdmmd2dc.xwalk
+    this document defines the mappings between the original XML
+    elements to the desired metadata schema
+
+  About7train.txt
+    this document
+
+  InstallAndRun.txt
+    instructions on 7train requirements, installation procedures and how
+    execute the transformation process
+
+  Customization.txt
+    instructions on how to customize various elements of the 7train
+    process
+
+  input/
+    the directory to hold input documents - the original XML, etc.
+
+  idmap.xml
+    an identifier map file
+
+  institutions.xml
+    a CDL-specific map file
+
+  examples/
+    the directory where example files are contained; currently holds
+    only oai.xsl
+
+  oai.xsl
+    found in the examples/ directory; this file provides a basic OAI
+    record to METS conversion
+
+  output/
+    the directory output METS files are written to
+ 		
+Requirements
+------------
+
+See README
+
+Customization
+-------------
+See Customizing.txt

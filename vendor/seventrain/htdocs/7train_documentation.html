@@ -1,0 +1,180 @@
+<html>
+<head>
+    <title>7train METS Generation Tool - Documentation</title>
+
+     <style>
+      .base{font-family:Comic Sans-Serif,Verdana,Helvetica,Arial,sans-serif;
+				color:#000000;
+				font-size:12px;
+			}
+
+      .nav{font-family:Comic Sans-Serif,Verdana,Helvetica,Arial,sans-serif;
+					color:#7d0d8b;
+					font-size:16px;
+					font-weight:bold;
+					text-decoration:none;
+			}
+
+      .navThis{font-family:Comic Sans-Serif,Verdana,Helvetica,Arial,sans-serif;
+					color:#d6c4d8;
+					font-size:16px;
+					font-weight:bold;
+					text-decoration:none;
+			}
+      .instruct{font-family:Courier;
+					font-size:12px;
+			}
+      h3{font-family:Comic Sans-Serif,Verdana,Helvetica,Arial,sans-serif;
+					color:#7d0d8b;
+					font-size:16px;
+					font-weight:bold;
+      }
+      h4{font-family:Comic Sans-Serif,Verdana,Helvetica,Arial,sans-serif;
+					color:#7d0d8b;
+					font-size:14px;
+					font-weight:bold;
+      }
+      h5{font-family:Comic Sans-Serif,Verdana,Helvetica,Arial,sans-serif;
+					color:#7d0d8b;
+					font-size:14px;
+					text-indent:20px;
+      }
+      h6{font-family:Comic Sans-Serif,Verdana,Helvetica,Arial,sans-serif;
+					color:#7d0d8b;
+					text-indent:40px;
+					font-size:12px;
+      }
+    </style>      
+</head>
+
+<body class="base" bgcolor="white" link="#0000ee" text="#000000"
+    vlink="#551a8b" leftmargin="20">
+ <table border="0" width="100%">
+
+  <tbody><tr>
+   <td colspan="2" height="140" align="center"><img src="logos/7train_med.jpg" border="0"></td>
+  </tr>
+
+<tr>
+   <td colspan="2"><h1>7train METS Generation Tool - Documentation</h1><hr/><p>&nbsp;</p></td>
+</tr>
+
+<tr>
+<td valign="top" width="25%">
+<table cellspacing="5" cellpadding="5">
+<tr height="40"><td><a class="nav" href="7train.html">About</a></td></tr>
+<tr height="40"><td><a class="nav" href="7train_download.html">Download</a></td></tr>
+<tr height="40"><td><a class="navThis" href="7train_documentation.html">Documentation</a></td></tr>
+<tr height="40"><td><a class="nav" href="7train_links.html">Links</a></td></tr>
+<!-- tr height="40"><td><a class="nav" href="">About</a></td></tr -->
+</table><p>&nbsp;</p>
+</td>
+
+<td width="75%" valign="top">
+<table width="90%"><tr><td>
+<h3>Overview &amp; Files</h3>
+<p>7train.xsl is the base stylesheet in the transformation and defines the basic 
+elements and structure of a METS file.  Local installations can customize this process 
+by creating a stylesheet that imports 7train.xsl and overrides certain templates.  The 
+"cdm.xsl" stylesheet (in the default implementation) is an example of a local installation 
+designed to transform a specific XML file (CONTENTdm export) into a specific kind of 
+METS.</p>  
+<p>The files included in this distribution are as follows:
+		    <ul>
+		      <li>7train.xsl - this is the stylesheet that constructs the basic METS sections; it
+does not attempt to define values for elements or attributes</li>
+		      <li>cdm.xsl - this primary stylesheet defines how the values in the original XML document
+will be transformed; in addition, it determines the structure and values for the METS sections
+defined in 7train.xsl</li>
+	    <li>xwalker.xsl - this stylesheet contains the logic that processes the mappings defined in *.xwalk to
+populate metadata sections in the METS (mainly the &lt;dmdSec&gt;)</li>
+	    <li>cdmmd2dc.xwalk - this document defines the mappings between the original XML elements
+to the desired metadata schema</li>
+	    <li>About7train.txt - this document</li>
+	    <li>InstallAndRun.txt - instructions on 7train requirements, installation procedures and how
+execute the transformation process</li>
+	    <li>Customization.txt - instructions on how to customize various elements of the 7train process</li>
+	    <li>input/ - the directory to hold input documents, including the original XML export, as well as
+"driver" files</li>
+	    <li style="text-indent:20px">idmap.xml - an identifier map file</li>
+	    <li style="text-indent:20px">institutions.xml - a CDL-specific map file</li>
+	    <li>examples/ - the directory where example files are contained; currently holds only oai.xsl</li>
+	    <li style="text-indent:20px">oai.xsl - found in the examples/ directory; this file provides a basic OAI record to METS
+conversion</li>
+	    <li>output/ - the directory output METS files are written to</li></ul>&nbsp;<hr/>&nbsp;</p>
+<h3>Requirements:</h3>
+<p>7train requires the use of Saxon 8, as it is composed using XSL version 2.0.  It
+also requires that 2 working directories be created.  These directories are used for 
+holding the data that a.) will be transformed and b.) saved as the result of the 
+transformation.  These need to be named: "input" and "output" and need to be created 
+at the same level as this stylesheet.  The "input" directory contains both exports to be 
+transformed as well as map files used to associate data not include in the export.  The 
+resulting METS output from the transformation will be saved in "output".</p>
+<p>Both of these requirements are delivered in the ZIP file that packages 7train.</p>
+<p>7train also requires that Java be installed on your computer.  If Java is not installed, 
+see the Troubleshooting section below.</p><p>&nbsp;<hr/>&nbsp;</p>
+<h3>Installation:</h3>
+<p><ul><li>Download and unzip 7train.zip. This will create a directory called 7train
+		    that contains the files described above.</li>
+		      <li>Export your collection from CONTENTdm using the CONTENTdm Standard XML export.</li>
+	<li>Save CONTENTdm export in the input directory.</li>
+	<li>OPTIONAL: Create your idmap and/or institutionmap files and place them in the input directory.&nbsp;&nbsp;See "InstallAndRun.txt" - included with 7train.zip - for more information.&nbsp;&nbsp;Remove "idmap.xml" and "institutionmap.xml" from the input directory if you do not wish to use this option.</li>
+</ul></p><p>&nbsp;<hr/>&nbsp;</p>
+<h3>Running 7train:</h3>
+<h4>Windows:</h4>
+<p><b>Drag & Drop:</b><br/>
+<ul><li>Drag the CONTENTdm Standard XML export file onto the file "cdm.bat."</li>
+<li>The METS records will be saved in the directory "output."</li></ul>
+<p><b>Command Line:</b><br/>
+<ul><li>Open a Command Prompt (Start/Program Files/Accessories/Command Prompt).</li>
+<li>Go the the 7train directory (i.e. <span class="instruct">cd C:\Documents and Settings\username\Desktop\7train</span>).</li>
+<li>Type the following command and hit enter:<br/>
+     				<span class="instruct">.\cdm.bat input\CONTENTdmExportFileName.xml</li>
+<li>The METS records will be saved in the directory "output."&nbsp;&nbsp;(Known bug: the METS may be saved to C:\output\.  This will be fixed in the next release.)</li></ul><p>
+<h4>Mac:</h4>
+<p><ul><li>Open a terminal window (in Applications/Utilities)</li>
+<li>Go to the 7train directory (cd /path/to/7train/)</li>
+<li>Enter the following command:</li>
+<li style="text-indent:20px" class="instruct">sh cdm.sh input/CONTENTdmExportFileName.xml</li></ul></p>
+<h4>Linux:</h4>
+<p><ul><li>In a shell window, go to the 7train directory and enter the following command:</li>
+<li style="text-indent:20px" class="instruct">sh cdm.sh input/CONTENTdmExportFileName.xml</li></ul></p><p>&nbsp;<hr/>&nbsp;</p>
+<h3>Troubleshooting:</h3>
+<p>
+<table width="100%" border="0" align="left">
+<tr><td valign="top" width="20%">Saxon</td><td valign="top" colspan="2">For information on the Saxon parser, please go to the
+			    <a href="http://saxon.sourceforge.net/">Saxon website</a></td></tr>
+<tr><td valign="top" width="20%">Installing Java</td><td valign="top" colspan="2">Please go to the Sun website for details on
+			    how to install Java on Microsoft Windows:
+			    <a
+			      href="http://java.sun.com/j2se/1.4.2/install-windows.html">Installation Notes for Microsoft Windows</a></td></tr>
+<tr><td valign="top" width="20%">Setting JAVA_HOME</td><td valign="top" colspan="2">For Mac and Linux users, if you are encountering
+			    errors that look like this:</td></tr>
+<tr><td valign="top" width="20%">&nbsp;</td><td valign="top">&nbsp;</td><td
+			      valign="top" class="instruct">cdm.sh: /path/to/java/bin/java: not found</td></tr>
+<tr><td valign="top" width="20%">&nbsp;</td><td valign="top" colspan="2">please be certain that you JAVA_HOME variable is set. In bash (Linux
+or Mac OS X), type the following:</td></tr>
+<tr><td valign="top" width="20%">&nbsp;</td><td valign="top">&nbsp;</td><td
+			      valign="top" class="instruct">export JAVA_HOME=/path/to/java/dir</td></tr>
+<tr><td valign="top" width="20%">&nbsp;</td><td valign="top" colspan="2">or in (t)csh:</td></tr>
+<tr><td valign="top" width="20%">&nbsp;</td><td valign="top">&nbsp;</td><td
+			      valign="top" class="instruct">setenv JAVA_HOME /path/to/java/dir</td></tr>
+<tr><td valign="top" width="20%">&nbsp;</td><td valign="top" colspan="2">The JAVA_HOME variable should be set to such a value that, if /bin/java is
+appended (e.g., /path/to/java/dir/bin/java), it resolves to the java
+binary.</td></tr>
+<tr><td valign="top" width="20%">Bug Reports &amp; Feedback</td><td valign="top" colspan="2"><a
+			      href="http://sourceforge.net/tracker/?func=add&group_id=160856&atid=817523">Submit a New Bug</a></td></tr>
+<tr><td valign="top" width="20%">&nbsp;</td><td valign="top" colspan="2"><a
+			      href="http://sourceforge.net/tracker/?func=add&group_id=160856&atid=817524">Submit a New Support Request</a></td></tr>
+</table>
+
+</p>
+
+
+</td></tr></table>
+</td>
+</tr>
+
+</tbody></table>
+<p><hr/></p>
+</body></html>

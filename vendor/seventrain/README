@@ -1,0 +1,153 @@
+Requirements
+------------
+
+7train requires Java 1.4 or later. Please see the Saxon requirements
+page for more information on this requirement
+(http://www.saxonica.com/documentation/index/installationjava/prerequisites.html).
+ 	
+Instructions
+------------
+
+Installation
+============
+
+Download and unzip 7train-1.1.zip
+
+This will create a directory called ``7train-1.1`` with the following
+files (see About7train.txt for more information)::
+
+  7train.xsl
+  cdm.bat
+  cdmmd2dc.xwalk
+  cdm.sh
+  cdm.xsl
+  LICENSE
+  README (this file)
+  saxon9.jar
+  SAXON_LICENSE
+  xwalker.xsl
+  doc/
+    About7train.txt
+    Customizing.txt
+  drivers/
+    idmap.xml
+    institutions.xml
+  examples/ 
+    oai.xsl
+    oai-sample.xml
+  output/
+    [empty]
+
+Export your collection from CONTENTdm using the CONTENTdm Standard XML
+export.
+
+Save CONTENTdm export in the ``input`` directory.
+     
+Running 7train
+==============
+
+Windows
+~~~~~~~
+
+Drag & Drop
+^^^^^^^^^^^
+
+Drag the CONTENTdm Standard XML export file onto the file ``cdm.bat``.
+
+The METS records will be saved in the directory ``output``.
+     			
+Command Line
+^^^^^^^^^^^^
+
+Open a Command Prompt (Start/Program Files/Accessories/Command Prompt).
+
+Go the the 7train directory (i.e.:: 
+
+  cd C:\Documents and Settings\username\Desktop\7train
+
+Type the following command and hit enter::
+
+  .\cdm.bat CONTENTdmExportFileName.xml
+
+The METS records will be saved in the directory "output."
+     		
+Mac
+~~~
+Open a terminal window (in Applications/Utilities)
+
+Change your current directory to the location that you unpacked 7train
+in::
+
+  cd /path/to/7train/
+
+Enter the following command::
+
+  sh cdm.sh /path/to/CONTENTdmExportFileName.xml
+     		
+Linux
+~~~~~
+Open a shell.
+
+Change your current directory to the location that you unpacked 7train
+in::
+
+  cd /path/to/7train/
+
+Enter the following command::
+
+  sh cdm.sh /path/to/CONTENTdmExportFileName.xml
+     		
+Troubleshooting
+---------------
+
+Saxon
+=====
+
+For information on the Saxon parser, please go to the Saxon website at
+http://saxon.sourceforge.net/
+
+Installing Java
+===============
+
+Please go to the Sun website for details on how to install Java on
+Microsoft Windows: http://www.java.com/
+
+Setting the JAVA_HOME variable
+==============================
+
+For Mac and Linux users, if you are encountering errors that look like this::
+
+  cdm.sh: /path/to/java/bin/java: not found
+
+please be certain that you ``JAVA_HOME`` variable is set. In bash (Linux
+or Mac OS X), type the following::
+
+  export JAVA_HOME=/path/to/java/dir
+
+or in (t)csh::
+
+  setenv JAVA_HOME /path/to/java/dir
+
+The JAVA_HOME variable should be set to such a value that, if
+``/bin/java`` is appended (e.g., ``/path/to/java/dir/bin/java``), it
+resolves to the java binary.
+
+Saxon
+-----
+
+7train is distributed with the Saxon-B XSLT processor, version
+9.1.0.7j. The licensing terms for Saxon-B may be found in the file
+``SAXON_LICENSING``. For more information about Saxon, please visit
+the Saxon web site, http://saxon.sourceforge.net/. For more
+information on the licensing terms of Saxon-B, see
+http://www.saxonica.com/documentation/conditions/intro.html.
+
+Bug reports & feedback
+----------------------
+
+Submit a New Bug at this webpage:
+http://sourceforge.net/tracker/?func=add&group_id=160856&atid=817523
+
+Submit a New Support Request at this webpage:
+http://sourceforge.net/tracker/?func=add&group_id=160856&atid=817524
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!--  use only ark stub for eadark -->
+<institutions>
+    <institution name="Berkeley Public Library.  Central Library.  Berkeley History Room" marccode="cb" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="California State University, Stanislaus.  University Library.  Special Collections" marccode="cturs" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Chula Vista Public Library.  John Rojas Local History Room" marccode="cchu" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Covina Public Library" marccode="ccov" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Glendale Public Library.  Brand Library &amp; Art Center" marccode="cgl" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Humboldt State University.  University Library.  Humboldt Room" marccode="carcht" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Kern County Library.  Beale Memorial Library" marccode="cbak" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Marin County Free Library.  Anne T. Kent California Room" marccode="csrcl" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Mill Valley Public Library.  Lucretia Little History Room" marccode="cmlpl" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Mission Viejo City Library" marccode="camjl" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Oakland Public Library.  Oakland History Room" marccode="copl" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Palos Verdes Library District" marccode="cpv" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Richmond Public Library" marccode="cric" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="San Bruno Public Library" marccode="csbrp" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="San Jose Public Library.  Dr. Martin Luther King Jr. Library.  California Room" marccode="csj" ark="kt6k4021nt" eadark="" eadlabel="" url=""/>
+    <institution name="San Mateo Public Library" marccode="csmat" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Southern California Library for Social Studies &amp; Research" marccode="clscls" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Sutter County Library" marccode="cyccl" ark="" eadark="" eadlabel="" url=""/>
+    <institution name="Yuba County Library.  California Room" marccode="cmary" ark="" eadark="" eadlabel="" url=""/>
+</institutions>

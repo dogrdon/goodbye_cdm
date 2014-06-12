@@ -1,0 +1,78 @@
+Modifying and Customizing 7train output
+---------------------------------------
+
+Basic Customization
+===================
+
+The basic logic for building the skeleton structure of a METS document
+is contained in ``7train.xsl``. Logic for defining the way that each
+of the METS sections is fleshed out is contained in the "primary"
+stylsheet, which in this implementation is called ``cdm.xsl``. The
+primary stylesheet overrides the XSL templates contained in
+``7train.xsl`` and determines how each METS section is encoded.
+
+XSL Parameters
+==============
+
+Parameters may be passed to the stylesheet, either on the command line
+or by a script. At the present the only usable parameter is
+``outputdir``, which specifies the directory to which output METS
+files will be saved.
+
+Descriptive Metadata Mappings
+=============================
+
+Crosswalk files (``*.xwalk``) provide a simple way to map from one
+XML metadata format to another. In this implementation the file
+``xwalker.xsl`` provides the logic for processing the mappings, while
+``cdmmd2dc.xwalk`` defines those mappings, i.e. what metadata elements
+the values in the original file (CONTENTdm Standard XML) are mapped to
+(Dublin Core).
+
+The logic file - ``xwalker.xsl`` - should not be altered, other than
+to add logic for processing field values, for example removing a
+prefix. An example appears in the template ``seventrain:split`` which
+splits a field value on each occurrence of a specific delimiting
+character.
+
+To define the metadata mappings, create a ``.xwalk`` file and refer to
+it in your primary stylesheet in the ``seventrain:mets-dmdSec``
+template as the parameter ``$xwalk-file``. (You may also need to
+modify the way the that ``<dmdSec>`` is constructed.) The ``*.xwalk``
+file should define the mappings as follows::
+
+  <original_element>
+    <namespace:mapped_element>
+      <namespace:mapped_element_subelement>
+        <seventrain:value/>
+      </namespace:mapped_element_subelement>
+    </namespace:mapped_element>
+  </original_element>
+
+An example::
+
+  <title>
+    <mods:titleInfo>
+      <mods:title>
+        <seventrain:value/>
+      </mods:title>
+    </mods:titleInfo>
+  </title>
+  
+Object File Locations
+=====================
+
+The location (the ``xlink:href`` attribute of ``<FLocat>``) of the
+files for each object is copied directly from the original XML file
+being transformed. Changing the pointer to the files can be done in
+the primary stylesheet, in the template named ``local:file-from-url``.
+
+Driver Files
+============
+
+This implementation of 7train uses "driver" files to populate
+variables that provide linking between attributes of an entity. These
+are called ``idmap.xml`` and ``institutions.xml`` and are used to link
+a local ID with a persistent ID (``idmap.xml``) and an institution's
+name, MARC code, URL, finding aid (EAD) title, finding aid ID and
+institution ID (``institutions.xml``).
