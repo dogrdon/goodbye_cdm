@@ -10,7 +10,7 @@ docs = os.listdir(file_path)
 
 
 xml_file = file_path + docs[0]
-xsl_file = './vendor/seventrain/cdm.xsl'
+xsl_file = './vendor/cdm_transformations/cdm2mets.xsl'
 
 print xml_file
 
