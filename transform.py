@@ -18,7 +18,7 @@ doc = ElementTree.parse(xml_file)
 
 stylesheet = ElementTree.parse(xsl_file)
 
-transform = ElementTree.XSLT(stylesheet)
+transform = ElementTree.XSLT(stylesheet) #currently this fails w/ lxml.etree.XSLTParseError: Invalid expression
 
 newdoc = transform(doc)
 
