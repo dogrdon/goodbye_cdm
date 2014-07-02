@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metadata>
+<metadata
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <record>
     <dc:title>Relief Record (for use at Central Office)</dc:title>
     <dc:subject>Milk</dc:subject>
