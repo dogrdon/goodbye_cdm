@@ -36,4 +36,4 @@ Date created			dc:cdmcreated
 Date modified			dc:cdmmodified
 CONTENTdm number		dc:cdmid
 CONTENTdm file name		dc:cdmfile
-CONTENTdm file path		cd:cdmpath
+CONTENTdm file path		dc:cdmpath
