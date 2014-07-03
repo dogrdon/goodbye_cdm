@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>Seeing New York (1)</pagetitle>
+    <pagefile>78.jpg</pagefile>
+    <pageptr>77</pageptr>
+  </page>
+  <page>
+    <pagetitle>Seeing New York (2)</pagetitle>
+    <pagefile>76.jpg</pagefile>
+    <pageptr>75</pageptr>
+  </page>
+  <page>
+    <pagetitle>Seeing New York (3)</pagetitle>
+    <pagefile>77.jpg</pagefile>
+    <pageptr>76</pageptr>
+  </page>
+  <page>
+    <pagetitle>Seeing New York (4)</pagetitle>
+    <pagefile>75.jpg</pagefile>
+    <pageptr>74</pageptr>
+  </page>
+  <page>
+    <pagetitle>Seeing New York (5)</pagetitle>
+    <pagefile>79.jpg</pagefile>
+    <pageptr>78</pageptr>
+  </page>
+  <page>
+    <pagetitle>Seeing New York (6)</pagetitle>
+    <pagefile>80.jpg</pagefile>
+    <pageptr>79</pageptr>
+  </page>
+</cpd>

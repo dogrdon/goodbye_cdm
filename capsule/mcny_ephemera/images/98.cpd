@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>Who's Afraid... (front)</pagetitle>
+    <pagefile>96.jpg</pagefile>
+    <pageptr>95</pageptr>
+  </page>
+  <page>
+    <pagetitle>Who's Afraid... (back)</pagetitle>
+    <pagefile>97.jpg</pagefile>
+    <pageptr>96</pageptr>
+  </page>
+</cpd>

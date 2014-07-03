@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>If You Knew (1)</pagetitle>
+    <pagefile>107.jpg</pagefile>
+    <pageptr>106</pageptr>
+  </page>
+  <page>
+    <pagetitle>If You Knew (2)</pagetitle>
+    <pagefile>108.jpg</pagefile>
+    <pageptr>107</pageptr>
+  </page>
+  <page>
+    <pagetitle>If You Knew (3)</pagetitle>
+    <pagefile>109.jpg</pagefile>
+    <pageptr>108</pageptr>
+  </page>
+  <page>
+    <pagetitle>If You Knew (4)</pagetitle>
+    <pagefile>110.jpg</pagefile>
+    <pageptr>109</pageptr>
+  </page>
+</cpd>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Postcard</type>
+  <page>
+    <pagetitle>Front</pagetitle>
+    <pagefile>121.jpg</pagefile>
+    <pageptr>120</pageptr>
+  </page>
+  <page>
+    <pagetitle>Back</pagetitle>
+    <pagefile>122.jpg</pagefile>
+    <pageptr>121</pageptr>
+  </page>
+</cpd>

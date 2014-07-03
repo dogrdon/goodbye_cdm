@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>Accomplishments (1)</pagetitle>
+    <pagefile>117.jpg</pagefile>
+    <pageptr>116</pageptr>
+  </page>
+  <page>
+    <pagetitle>Accomplishments (2)</pagetitle>
+    <pagefile>118.jpg</pagefile>
+    <pageptr>117</pageptr>
+  </page>
+  <page>
+    <pagetitle>Accomplishments (3)</pagetitle>
+    <pagefile>119.jpg</pagefile>
+    <pageptr>118</pageptr>
+  </page>
+</cpd>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>[A Letter to Expectant Mothers (English) front]</pagetitle>
+    <pagefile>43.jpg</pagefile>
+    <pageptr>42</pageptr>
+  </page>
+  <page>
+    <pagetitle>[A Letter to Expectant Mothers (English) inside faces]</pagetitle>
+    <pagefile>27.jpg</pagefile>
+    <pageptr>26</pageptr>
+  </page>
+  <page>
+    <pagetitle>[A Letter to Expectant Mothers (English) back]</pagetitle>
+    <pagefile>29.jpg</pagefile>
+    <pageptr>28</pageptr>
+  </page>
+</cpd>

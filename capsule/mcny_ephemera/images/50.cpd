@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>Milk: It's Value to the Home (1)</pagetitle>
+    <pagefile>46.jpg</pagefile>
+    <pageptr>45</pageptr>
+  </page>
+  <page>
+    <pagetitle>Milk: Its Value in the Home: Milk As a Family Food (2)</pagetitle>
+    <pagefile>47.jpg</pagefile>
+    <pageptr>46</pageptr>
+  </page>
+  <page>
+    <pagetitle>Milk: Its Value in the Home: The Proper Care of Milk in the Home (3)</pagetitle>
+    <pagefile>45.jpg</pagefile>
+    <pageptr>44</pageptr>
+  </page>
+  <page>
+    <pagetitle>Milk: Its Value in the Home: The Kind of Milk to Buy (4)</pagetitle>
+    <pagefile>48.jpg</pagefile>
+    <pageptr>47</pageptr>
+  </page>
+  <page>
+    <pagetitle>Milk: Its Value in the Home (5)</pagetitle>
+    <pagefile>49.jpg</pagefile>
+    <pageptr>48</pageptr>
+  </page>
+</cpd>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>Out of Town (front)</pagetitle>
+    <pagefile>40.jpg</pagefile>
+    <pageptr>39</pageptr>
+  </page>
+  <page>
+    <pagetitle>Out of Town (inside faces)</pagetitle>
+    <pagefile>39.jpg</pagefile>
+    <pageptr>38</pageptr>
+  </page>
+  <page>
+    <pagetitle>Out of Town (back)</pagetitle>
+    <pagefile>38.jpg</pagefile>
+    <pageptr>37</pageptr>
+  </page>
+</cpd>
