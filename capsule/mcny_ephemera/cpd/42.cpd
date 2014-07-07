@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>A Letter to Expectant Mothers (Yiddish)</pagetitle>
+    <pagefile>35.jpg</pagefile>
+    <pageptr>34</pageptr>
+  </page>
+  <page>
+    <pagetitle>[A Letter to Expectant Mothers (Yiddish) inside faces]</pagetitle>
+    <pagefile>36.jpg</pagefile>
+    <pageptr>35</pageptr>
+  </page>
+  <page>
+    <pagetitle>A Letter to Expectant Mothers  Yiddish   back</pagetitle>
+    <pagefile>30.jpg</pagefile>
+    <pageptr>29</pageptr>
+  </page>
+</cpd>

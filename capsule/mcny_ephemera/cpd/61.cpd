@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>What Milk to Buy (1)</pagetitle>
+    <pagefile>51.jpg</pagefile>
+    <pageptr>50</pageptr>
+  </page>
+  <page>
+    <pagetitle>What Milk to Buy (2)</pagetitle>
+    <pagefile>52.jpg</pagefile>
+    <pageptr>51</pageptr>
+  </page>
+  <page>
+    <pagetitle>What Milk to Buy (3)</pagetitle>
+    <pagefile>54.jpg</pagefile>
+    <pageptr>53</pageptr>
+  </page>
+</cpd>

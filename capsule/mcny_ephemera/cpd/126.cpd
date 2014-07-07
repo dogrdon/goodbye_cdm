@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>A 6% Dividend (1)</pagetitle>
+    <pagefile>123.jpg</pagefile>
+    <pageptr>122</pageptr>
+  </page>
+  <page>
+    <pagetitle>A 6% Dividend (2)</pagetitle>
+    <pagefile>124.jpg</pagefile>
+    <pageptr>123</pageptr>
+  </page>
+  <page>
+    <pagetitle>A 6% Dividend (3)</pagetitle>
+    <pagefile>125.jpg</pagefile>
+    <pageptr>124</pageptr>
+  </page>
+</cpd>

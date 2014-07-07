@@ -4,7 +4,9 @@ import urllib
 import os
 import csv
 
-'''Those pesky contentdm images have been lost and you just want to grab them off the server...well their shruken derivatives that is, just so you can develop. This will go through a processed set of records exported from cdm and get their images from off the server, that's all'''
+'''Those pesky contentdm images have been lost and you just want to grab them off the server...
+well their shruken derivatives that is, just so you can develop. This will go through a processed 
+set of records exported from cdm and get their images from off the server, that's all'''
 
 
 path_to_csv = "../capsule/mcny_ephemera/metadata/" #hardwired for now

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>Special Bulletin (1)</pagetitle>
+    <pagefile>112.jpg</pagefile>
+    <pageptr>111</pageptr>
+  </page>
+  <page>
+    <pagetitle>Special Bulletin (2)</pagetitle>
+    <pagefile>113.jpg</pagefile>
+    <pageptr>112</pageptr>
+  </page>
+</cpd>

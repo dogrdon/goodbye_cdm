@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>Milk: Its Value to the Home   [fold-out] (1)</pagetitle>
+    <pagefile>56.jpg</pagefile>
+    <pageptr>55</pageptr>
+  </page>
+  <page>
+    <pagetitle>Milk: Its Value to the Home   [fold-out]  (2)</pagetitle>
+    <pagefile>57.jpg</pagefile>
+    <pageptr>56</pageptr>
+  </page>
+</cpd>

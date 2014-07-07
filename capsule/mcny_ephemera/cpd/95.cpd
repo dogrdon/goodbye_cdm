@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<cpd>
+  <type>Document</type>
+  <page>
+    <pagetitle>The House with the Blue Front (1)</pagetitle>
+    <pagefile>91.jpg</pagefile>
+    <pageptr>90</pageptr>
+  </page>
+  <page>
+    <pagetitle>The House with the Blue Front (2)</pagetitle>
+    <pagefile>92.jpg</pagefile>
+    <pageptr>91</pageptr>
+  </page>
+  <page>
+    <pagetitle>The House with the Blue Front (3)</pagetitle>
+    <pagefile>93.jpg</pagefile>
+    <pageptr>92</pageptr>
+  </page>
+  <page>
+    <pagetitle>The House with the Blue Front (4)</pagetitle>
+    <pagefile>94.jpg</pagefile>
+    <pageptr>93</pageptr>
+  </page>
+</cpd>
