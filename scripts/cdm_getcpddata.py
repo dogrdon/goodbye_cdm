@@ -9,14 +9,33 @@ import os
 import csv
 from lxml import etree
 
-doc = etree.parse("../capsule/mcny_ephemera/cpd/15.cpd")
+_CPD_PATH = '../capsule/mcny_ephemera/cpd/'
 
-for s in doc.xpath("//cpd/type"):
-	print 'type:', s.text
+def get_cpd_data(path):
 
-for t in doc.xpath("//cpd/page"):
-	print 'part:', t.xpath('pagetitle')[0].text
-	print 'id:', t.xpath('pageptr')[0].text
+	files = os.listdir(path)
 
 
+	for f in files:
+		
+		resource = _CPD_PATH+f
+	
+		doc = etree.parse(resource)
+
+
+		print '===', f, '===='
+
+
+		for s in doc.xpath("//cpd/type"):
+			print 'type:', s.text
+
+		for t in doc.xpath("//cpd/page"):
+			print 'part:', t.xpath('pagetitle')[0].text
+			print 'id:', t.xpath('pageptr')[0].text
+	
+
+
+if __name__ == "__main__":
+
+	get_cpd_data(_CPD_PATH)
 	
