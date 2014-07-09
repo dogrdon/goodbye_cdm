@@ -35,7 +35,7 @@ def get_cpd_data(path):
 
 				obj_type = s.text
 
-			row = []
+			
 			for t in doc.xpath("//cpd/page"):
 
 				
